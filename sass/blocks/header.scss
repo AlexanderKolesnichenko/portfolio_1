@@ -1,0 +1,74 @@
+.header {
+  height: auto;
+  background: url("../img/header-fon.jpg") center center no-repeat;
+  background-size: cover;
+  padding-bottom: 40px;
+
+
+  .header__top {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .header__logo {
+      display: inline-block;
+      text-decoration: none;
+      max-width: 181.48px;
+    }
+
+    .header__logoImg {
+      width: 64px;
+      height: 56px;
+    }
+
+    .header__logoText {
+      margin-top: 9px;
+      font-size: 33px;
+      float: right;
+      color: $white;
+      text-align: right;
+    }
+
+
+    .header__iconBlock {
+      padding-top: 15px;
+      position: relative;
+    }
+
+
+    .header__icon_search {
+      margin-left: 25px;
+      fill: $white;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      &:hover {
+        fill: $brown-text;
+      }
+    }
+
+    .header__icon_cart {
+      margin-left: 25px;
+      fill: $white;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      &:hover {
+        fill: $brown-text;
+      }
+
+      @media (max-width: 1100px) {
+        margin-left: 0;
+      }
+    }
+
+
+    @media (max-width: 1010px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+}

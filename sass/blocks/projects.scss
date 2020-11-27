@@ -1,0 +1,332 @@
+.projects {
+  background-color: $fonColor;
+  padding-top: 85px;
+  padding-bottom: 80px;
+
+
+
+
+
+.projects__list.wrap {
+
+  padding: 0;
+  min-width: 150px;
+}
+
+.projects__title {
+  @include title-style();
+}
+
+
+.projects__text {
+  @include description-style();
+  width: 65%;
+  margin: 0 auto 45px auto;
+}
+
+.projects__categoriesList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+
+.projects__categories {
+  list-style-type: none;
+  margin-right: 10px;
+
+
+}
+
+
+.projects__categories-link {
+
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  border: 1px solid #ebebeb;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: $gray-description;
+  text-decoration: none;
+  display: block;
+  transition-duration: 500ms;
+  transition-property: color, background-color;
+
+
+  &:hover {
+
+    background-color: $brown-button;
+    color: $white;
+  }
+
+}
+
+
+.projects__list {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  //display: grid;
+  //grid-template-columns: repeat(auto-fit, minmax(270px, auto));
+  //grid-column-gap: 30px;
+
+  @media (max-width: 998px) {
+
+    justify-content: center;
+
+  }
+
+
+}
+
+
+.projects__info {
+  position: relative;
+  max-height: 276px;
+
+  &:before {
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    content: "";
+    transition-property: opacity;
+    transition-duration: 500ms;
+
+  }
+
+}
+
+
+.projects__element {
+  list-style-type: none;
+  width: 31.623%;
+
+  //width: 100%;
+  margin-bottom: 30px;
+
+  @media (max-width: 998px) {
+    flex-basis: 35%;
+    padding: 0 15px;
+  }
+
+
+  @media (max-width: 767px) {
+    flex-basis: 51%;
+
+  }
+
+  @media (max-width: 480px) {
+    flex-basis: 79%;
+    padding: 0;
+  }
+
+  &:hover {
+
+    .projects__descriptionArea {
+      background-color: #362f2d;
+    }
+
+    .projects__svg {
+      fill: #362f2d;
+    }
+
+    .projects__info {
+
+      &:before {
+        z-index: 1;
+        opacity: 0.6;
+      }
+
+    }
+
+    .projects__buttons {
+      opacity: 1;
+    }
+
+
+    .projects__name {
+      color: $white;
+    }
+
+    .projects__description {
+      color: $brown-text;
+    }
+  }
+
+
+}
+
+
+.projects__element--active {
+
+
+  .projects__descriptionArea {
+    background-color: #362f2d;
+  }
+
+  .projects__svg {
+    fill: #362f2d;
+  }
+
+  .projects__info {
+
+    &:before {
+      z-index: 1;
+      opacity: 0.6;
+    }
+
+  }
+
+  .projects__buttons {
+    opacity: 1;
+  }
+
+
+  .projects__name {
+    color: $white;
+  }
+
+  .projects__description {
+    color: $brown-text;
+  }
+
+}
+
+
+.projects__buttons {
+  width: 80px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 500ms;
+}
+
+
+.projects__link {
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+.projects__svg_link {
+  width: 20px;
+  height: 25px;
+  fill: $white;
+
+  &:hover {
+
+    fill: $brown-text;
+
+  }
+
+}
+
+.projects__lop {
+  padding: 0;
+  cursor: pointer;
+  appearance: none;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  border: none;
+
+}
+
+.projects__svg_lup {
+
+  width: 22px;
+  height: 25px;
+  fill: $white;
+
+  &:hover {
+
+    fill: $brown-text;
+
+  }
+}
+
+
+.projects__img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.projects__descriptionArea {
+  width: 100%;
+  height: auto;
+  background-color: $fonColor;
+  position: relative;
+
+}
+
+
+.projects__svg {
+  position: absolute;
+  width: 28px;
+  height: 10px;
+  fill: $fonColor;
+  top: -9px;
+  z-index: 1;
+  left: 20px;
+
+}
+
+.projects__name {
+
+  font-size: 20px;
+  color: $brown-text;
+  padding: 30px 0 4px 30px;
+
+  @media (max-width: 998px) {
+    font-size: 16px;
+  }
+  @media (max-width: 767px) {
+    padding-left: 0;
+    text-align: center;
+  }
+
+
+}
+
+.projects__description {
+  color: $gray-description;
+  padding: 0 0 23px 30px;
+  font-family: "Montserrat";
+
+
+  @media (max-width: 998px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+
+.projects__btn {
+
+  @include button-style();
+  margin: 10px auto 0 auto;
+
+}
+}

@@ -1,0 +1,34 @@
+.ideas{
+  background-color: $fonColor;
+  padding-top: 85px;
+
+position: relative;
+
+
+.ideas__wrap{
+
+  max-height: 598px;
+
+}
+.ideas__title{
+
+@include title-style();
+
+}
+
+
+.ideas__description{
+
+  @include description-style();
+  width: 65%;
+  margin:0 auto 35px auto;
+}
+
+
+.ideas__img{
+
+  width: 100%;
+  height: auto;
+
+}
+}

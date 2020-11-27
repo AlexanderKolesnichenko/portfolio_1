@@ -1,0 +1,102 @@
+.forMobile {
+  .forMobile__wrap {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+
+      padding-bottom: 80px;
+
+    }
+
+
+    @media (max-width: 480px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding-bottom: 0;
+    }
+
+
+  }
+
+
+  .forMobile__bgr-img {
+    width: 40%;
+    padding-left: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media (max-width: 992px) {
+
+
+      padding-left: 0;
+    }
+    @media (max-width: 768px) {
+
+      justify-content: center;
+
+    }
+  }
+
+
+  .forMobile__img {
+    width: 100%;
+  }
+
+
+  .forMobile__info {
+    padding-top: 115px;
+    width: 60%;
+
+    @media (max-width: 992px) {
+
+      padding-top: 0;
+
+    }
+
+    @media (max-width: 480px) {
+      text-align: center;
+    }
+  }
+
+  .forMobile__title {
+    margin-bottom: 27px;
+    font-size: 30px;
+    color: $gray-header;
+    font-weight: 700;
+  }
+
+  .forMobile__text {
+
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: $gray-description;
+    line-height: 1.714;
+
+  }
+
+
+  .forMobile__list {
+    list-style-type: none;
+    margin-left: 10px;
+
+    @media (max-width: 992px) {
+
+      margin-left: 0;
+      padding-left: 10px;
+    }
+  }
+
+
+  .forMobile__listElement {
+
+    margin-bottom: 12px;
+    height: auto;
+    background: url("../img/link-marker.png") left center no-repeat;
+    padding: 2px 0 2px 50px;
+
+  }
+}

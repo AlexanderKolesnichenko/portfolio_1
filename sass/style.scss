@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import "normalize";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/slider";
+@import "blocks/services";
+@import "blocks/ideas";
+@import "blocks/textBoxes";
+@import "blocks/partners";
+@import "blocks/projects";
+@import "blocks/forMobile";
+@import "blocks/counters";
+@import "blocks/video";
+@import "blocks/footer";
+@import "blocks/posts";
+@import "blocks/carousel";

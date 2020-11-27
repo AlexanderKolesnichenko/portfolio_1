@@ -1,0 +1,66 @@
+.textBoxes {
+
+  background: linear-gradient(90deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
+
+}
+
+.textBoxes__wrap {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media (max-width: 768px) {
+
+    flex-direction: column;
+    align-items: center;
+text-align: center;
+  }
+
+}
+
+
+.textBoxes__title {
+
+
+  font-size: 28px;
+  color: $brown-text;
+  line-height: 1.2;
+
+  font-weight: 300;
+margin-bottom: 10px;
+  & span {
+    color: $white;
+  }
+
+}
+
+.textBoxes__text{
+
+
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: #615855;
+    line-height: 1.2;
+
+font-weight: 700;
+
+  @media (max-width: 768px) {
+
+    margin-bottom: 30px;
+  }
+}
+
+
+
+.textBoxes__btn {
+
+  @include button-style();
+
+}
+
+
+
